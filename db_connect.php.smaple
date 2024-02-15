@@ -1,0 +1,63 @@
+
+<?php
+include_once 'class.db.php';
+    /*
+        Connect to the application DB
+    */
+	//$db = 'DB';
+	$db_host = 'HOST';
+	$db_user = 'USER';
+	$db_pass = 'PASS';
+	$url = $_SERVER['HTTP_HOST'];
+
+if($url=="imeetattendance.ourlib.in")	{
+	$db = 'imeetkoha';
+}
+if($url=="sbmp.attendance.ourlib.in")   {
+	$db = 'sbmpkoha';
+}
+if($url=="djsce.attendance.ourlib.in")   {
+	$db = 'djscekoha';
+}
+if($url=="nmcce.attendance.ourlib.in")   {
+	$db = 'nmccekoha';
+}
+if($url=="nmhyd.attendance.ourlib.in")   {
+	$db = 'nmhydkoha';
+}
+if($url=="mpst.attendance.ourlib.in")   {
+	$db = 'mpstkoha';
+}
+if($url=="bncp.attendance.ourlib.in")   {
+	$db = 'bncpkoha';
+}
+if($url=="sptm.attendance.ourlib.in")   {
+	$db = 'sptmkoha';
+}
+if($url=="upgcm.attendance.ourlib.in")   {
+	$db = 'upgcmkoha';
+}
+if($url=="dertfootfall.ourlib.in"){
+	$db = 'dertkoha';
+}
+if($url=="pdalmiaattendance.ourlib.in"){
+        $db = 'PLdalmia';
+}
+if($url=="bshattendance.ourlib.in"){
+        $db = 'BSH_koha';
+}
+if($url=="vwesfootfall.ourlib.in"){
+	$db_host = 'HOST';
+        $db_user = 'user';
+        $db_pass = 'pass';
+	$db = 'vweskoha';
+}
+if($url=="arkattendance.ourlib.in"){
+        $db_host = '';
+        $db_user = '';
+        $db_pass = '';
+        $db = '';
+}
+
+
+?>
