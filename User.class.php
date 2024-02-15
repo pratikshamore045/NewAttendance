@@ -114,10 +114,6 @@ public function authenticate($username, $password)
 }
 
 
-
-
-
-
 public function getPatronDetails($cardnumber){
 $record = $this->pdo->select('borrowers','cardnumber=\''.$cardnumber.'\'');
 // print_r($record);
@@ -858,12 +854,6 @@ return $record;
 
 }
 
-/*public function insertCardnumber($data)
-{
- $this->pdo->insert('facility_attendance',$data);
-
-
-}*/
 
 
 
@@ -909,7 +899,7 @@ echo '<script type="text/javascript">alert("Cardnumber Not Valid");</script>';
 }
 
  }
- 
+
  
 /*
 public function insertCardnumber($cardnumber){
